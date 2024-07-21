@@ -7,7 +7,7 @@ I Will filter your channel posts automatically and send it in your group chat wh
     HELP = """To Use me In A Group
 
 - Add me in your group & channel with all permissions. 
-- Send /verify in group & wait for It To Accept Or Directly Contact To Owner After Request @CyniteOfficial.
+- Send /verify in group & wait for It To Accept Or Directly Contact To Owner After Request @DK_ROBOTS.
 - After verification send /connect YourChannelID
 - Example : /connect -100xxxxxxxxxx
 - Done ✅. <b><I>Enjoy 💜❤</I></b> )
@@ -17,13 +17,13 @@ this will help you to remove a indexed channel from your group.
 
 Get connected channels list with - /connections"""
 
-    ABOUT = """Powered By @CyniteBackup
+    ABOUT = """Powered By @DK_ROBOTS
 
 ✯ Mʏ Nᴀᴍᴇ:  {}
-✯ Cʀᴇᴀᴛᴏʀ: <a href='tg://user?id=1883570185'>Harman</a>
-✯ Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org'>Pʏᴛʜᴏɴ 3</a>
-✯ DᴀᴛᴀBᴀsᴇ: <a href='https://cloud.mongodb.com/'>MᴏɴɢᴏDB</a>
-✯ Bᴏᴛ Sᴇʀᴠᴇʀ: : <a href='https://heroku.com'>Heroku</a>"""
+✯ Cʀᴇᴀᴛᴏʀ: <a href='tg://user?id=6872968794'>🔥︵L͙I͙G͙H͙T͙ ✿ Y͙A͙G͙A͙M͙I͙︵🔥</a>
+✯ SUPPORT GROUP: <a href='https://t.me/DK_ROBOTS_GROUP'>@DK_ROBOTS_GROUO</a>
+✯ CHANNEL: <a href='https://cloud.mongodb.com/'>@DK_ROBOTS</a>
+✯ DONATE: : <a href='tg://user?id=6872968794'>BUY A COFEE</a>"""
 
     STATS = """My Status 💫
 
