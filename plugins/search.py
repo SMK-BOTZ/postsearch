@@ -35,11 +35,11 @@ async def search(bot, message):
                     break
 
         if forward_count == 0:
-            # If no results found, provide suggestions
-            movies = await search_imdb(query)
+            # If no results found, provide suggestions from MyAnimeList
+            anime_list = await search_myanimelist(query)
             buttons = []
-            for movie in movies:
-                buttons.append([InlineKeyboardButton(movie['title'], callback_data=f"recheck_{movie['id']}")])
+            for anime in anime_list:
+                buttons.append([InlineKeyboardButton(anime['title'], callback_data=f"recheck_{anime['id']}")])
 
             await message.reply_photo(
                 photo="https://graph.org/file/20f2a42c266a15b3118c8.jpg",
@@ -62,7 +62,7 @@ async def recheck(bot, update):
 
     await update.message.edit("Searching..💥")
     id = update.data.split("_")[-1]
-    query = await search_imdb(id)
+    query = await search_myanimelist(id)
     channels = (await get_group(update.message.chat.id))["channels"]
     forward_count = 0
 
@@ -96,9 +96,9 @@ async def request(bot, update):
 
     admin = (await get_group(update.message.chat.id))["user_id"]
     id = update.data.split("_")[1]
-    name = await search_imdb(id)
-    url = "https://www.imdb.com/title/tt" + id
-    text = f"#RequestFromYourGroup\n\nName: {name}\nIMDb: {url}"
+    name = await search_myanimelist(id)
+    url = "https://myanimelist.net/anime/" + id
+    text = f"#RequestFromYourGroup\n\nName: {name}\nMyAnimeList: {url}"
     await bot.send_message(chat_id=admin, text=text, disable_web_page_preview=True)
     await update.answer("✅ Request Sent To Admin", show_alert=True)
     await update.message.delete(60)
