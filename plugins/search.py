@@ -26,7 +26,7 @@ async def search(bot, message):
                if name in results:
                   continue 
                results += f"<b><I>👉 {name}\n🔗 {msg.link}</I></b>\n\n"                                                      
-      else:
+       else:
           msg = await message.reply_text(text=head+results, disable_web_page_preview=True)
        _time = (int(time()) + (15*60))
        await save_dlt_message(msg, _time)
