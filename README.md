@@ -6,7 +6,7 @@
   <b>Channel-Post-Filter</b>
 </h1>
 
-## TG Bot [@DK_BOTS](https://telegram.me/DK_ROBOTS)
+## TG Bot [@DK_ROBOTS](https://telegram.me/DK_ROBOTS)
 
 ## Telegram 
 
