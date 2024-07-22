@@ -1,4 +1,4 @@
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=CHANNEL+POST+FILTER+BOT!;CREATED+BY+DK+BOTS!)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=CHANNEL+POST+FILTER+BOT!;CREATED+BY+DK+ROBOTS!)
 </p>
 
 </p>
@@ -6,7 +6,7 @@
   <b>Channel-Post-Filter</b>
 </h1>
 
-## TG Bot [@DK_BOTS](https://telegram.me/DK_BOTS)
+## TG Bot [@DK_BOTS](https://telegram.me/DK_ROBOTS)
 
 ## Telegram 
 
