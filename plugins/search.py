@@ -17,30 +17,15 @@ async def search(bot, message):
     if message.text.startswith("/"):
        return    
     query   = message.text 
-    head    = "<u>Here is the results 👇</u>"
-    results = ""
+    head    = "<u>Here is the result 👇</u>"
     try:
        for channel in channels:
            async for msg in User.search_messages(chat_id=channel, query=query):
-               name = (msg.text or msg.caption).split("\n")[0]
-               if name in results:
-                  continue 
-               results += f"<b><I>👉 {name}\n🔗 {msg.link}</I></b>\n\n"                                                      
-       if bool(results)==False:
-          movies = await search_imdb(query)
-          buttons = []
-          for movie in movies: 
-              buttons.append([InlineKeyboardButton(movie['title'], callback_data=f"recheck_{movie['id']}")])
-          msg = await message.reply_photo(photo="https://graph.org/file/20f2a42c266a15b3118c8.jpg",
-                                          caption="<b><I>I Couldn't find anything related to Your Query😕.\nDid you mean any of these?</I></b>", 
-                                          reply_markup=InlineKeyboardMarkup(buttons))
-       else:
-          msg = await message.reply_text(text=head+results, disable_web_page_preview=True)
-       _time = (int(time()) + (15*60))
-       await save_dlt_message(msg, _time)
-    except:
-       pass
-       
+               # Forward the message instead of sending a link
+               await msg.forward(message.chat.id)
+               break  # Stop after forwarding the first matching message
+    except Exception as e:
+       await message.reply_text(f"❌ Error: {e}")
 
 
 @Client.on_callback_query(filters.regex(r"^recheck"))
@@ -58,19 +43,14 @@ async def recheck(bot, update):
     query   = await search_imdb(id)
     channels = (await get_group(update.message.chat.id))["channels"]
     head    = "<u>I Have Searched With Wrong Spelling But Take care next time 👇 </u>"
-    results = ""
     try:
        for channel in channels:
            async for msg in User.search_messages(chat_id=channel, query=query):
-               name = (msg.text or msg.caption).split("\n")[0]
-               if name in results:
-                  continue 
-               results += f"<b><I>👉🍿 {name}</I></b>\n\n🔗 {msg.link}</I></b>\n\n"
-       if bool(results)==False:          
-          return await update.message.edit("Still no results found! Please Request To Group Admin", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎯 Request To Admin 🎯", callback_data=f"request_{id}")]]))
-       await update.message.edit(text=head+results, disable_web_page_preview=True)
+               # Forward the message instead of sending a link
+               await msg.forward(update.message.chat.id)
+               break  # Stop after forwarding the first matching message
     except Exception as e:
-       await update.message.edit(f"❌ Error: `{e}`")
+       await update.message.edit(f"❌ Error: {e}")
 
 
 @Client.on_callback_query(filters.regex(r"^request"))
