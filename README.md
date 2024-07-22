@@ -11,7 +11,7 @@
 ## Telegram 
 
 
-* [![Contact](https://img.shields.io/static/v1?label=Contact&message=On+Telegram&color=critical)](https://t.me/mai_hu_kira)
+* [![Contact](https://img.shields.io/static/v1?label=Contact&message=On+Telegram&color=critical)](https://telegram.me/mai_hu_kira)
 
 ## Deploy 
 
