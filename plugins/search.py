@@ -26,15 +26,8 @@ async def search(bot, message):
                if name in results:
                   continue 
                results += f"<b><I>👉 {name}\n🔗 {msg.link}</I></b>\n\n"                                                      
-       if bool(results)==False:
-          movies = await search_imdb(query)
-          buttons = []
-          for movie in movies: 
-              buttons.append([InlineKeyboardButton(movie['title'], callback_data=f"recheck_{movie['id']}")])
-          msg = await message.reply_photo(photo="https://graph.org/file/20f2a42c266a15b3118c8.jpg",
-                                          caption="<b><I>I Couldn't find anything related to Your Query😕.\nDid you mean any of these?</I></b>", 
-                                          reply_markup=InlineKeyboardMarkup(buttons))
-       else:
+     
+    else:
           msg = await message.reply_text(text=head+results, disable_web_page_preview=True)
        _time = (int(time()) + (15*60))
        await save_dlt_message(msg, _time)
@@ -50,26 +43,4 @@ async def recheck(bot, update): regards
        typed = update.message.reply_to_message.from_user.id
     except:
        return await update.message.delete(2)       
-    if clicked != typed:
-       return await update.answer("That's not for you! 👀", show_alert=True)
-
-    m=await update.message.edit("Searching..💥")
-    id      = update.data.split("_")[-1]
-    query   = await search_imdb(id)
-    channels = (await get_group(update.message.chat.id))["channels"]
-    head    = "<u>I Have Searched Movie With Wrong Spelling But Take care next time 👇\n\n.</u> <b><I>👇</I></b>\n\n"
-    results = ""
-    try:
-       for channel in channels:
-           async for msg in User.search_messages(chat_id=channel, query=query):
-               name = (msg.text or msg.caption).split("\n")[0]
-               if name in results:
-                  continue 
-               results += f"<b><I>♻️🍿 {name}</I></b>\n\n🔗 {msg.link}</I></b>\n\n"
-       if bool(results)==False:          
-          return await update.message.edit("Still no results found! Please Request To Group Admin", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎯 Request To Admin 🎯", callback_data=f"request_{id}")]]))
-       await update.message.edit(text=head+results, disable_web_page_preview=True)
-    except Exception as e:
-       await update.message.edit(f"❌ Error: `{e}`")
-
-
+    
