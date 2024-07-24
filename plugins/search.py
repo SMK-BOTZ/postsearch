@@ -25,9 +25,7 @@ async def search(bot, message):
                name = (msg.text or msg.caption).split("\n")[0]
                if name in results:
                   continue 
-               results += f"<b><I>👉 {name}\n🔗 {msg.link}</I></b>\n\n"                                                      
-       if bool(results)==False:
-          movies = await search_imdb(query)
+               results += f"<b><I>👉 {name}\n🔗 {msg.link}</I></b>\n\n"                                                     
         
     except:
        pass
