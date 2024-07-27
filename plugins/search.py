@@ -32,6 +32,6 @@ async def search(bot, message):
                     await msg.forward(message.chat.id)
                     forward_count += 1
                 except:
-       pass
+                    pass
        
        
