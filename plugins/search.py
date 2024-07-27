@@ -31,6 +31,7 @@ async def search(bot, message):
                 if forward_count < FORWARD_LIMIT:  # Check the limit before forwarding
                     await msg.forward(message.chat.id)
                     forward_count += 1
-                else:
-                   pass
+                except:
+       pass
+       
        
