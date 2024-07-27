@@ -16,6 +16,8 @@ async def search(bot, message):
        return     
     if message.text.startswith("/"):
        return    
+        if message.text.startswith("."):
+       return    
     query   = message.text 
     head    = "<u>Here is the result 👇</u>"
     try:
