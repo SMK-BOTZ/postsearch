@@ -36,6 +36,3 @@ async def search(bot, message):
 
         if forward_count == 0:
             return 
-except:
-       pass
-       
