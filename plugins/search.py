@@ -35,11 +35,7 @@ async def search(bot, message):
                     break
 
         if forward_count == 0:
-            movies = await search_imdb(query)
-           else:
-          msg = await message.reply_text(text=head+results, disable_web_page_preview=True)
-       _time = (int(time()) + (15*60))
-       await save_dlt_message(msg, _time)  
+            return 
 except:
        pass
        
