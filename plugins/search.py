@@ -16,8 +16,6 @@ async def search(bot, message):
        return     
     if message.text.startswith("/"):
        return    
-        if message.text.startswith("."):
-       return    
     query   = message.text 
     head    = "<u>Here is the result 👇</u>"
     try:
@@ -26,9 +24,6 @@ async def search(bot, message):
                # Forward the message instead of sending a link
                await msg.forward(message.chat.id)
                break  # Stop after forwarding the first matching message
-    except Exception as e:
-       await message.reply_text(f"❌ Error: {e}")
-
 
 @Client.on_callback_query(filters.regex(r"^recheck"))
 async def recheck(bot, update):
