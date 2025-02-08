@@ -25,7 +25,7 @@ async def search(bot, message):
                await msg.forward(message.chat.id)
                break  # Stop after forwarding the first matching message
     except Exception as e:
-       await message.reply_text(f" Error: {e}")
+       await message.reply_text(f"❌ Error: {e}")
 
 
 @Client.on_callback_query(filters.regex(r"^recheck"))
