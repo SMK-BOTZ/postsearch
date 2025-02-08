@@ -1,7 +1,7 @@
 import asyncio
 from info import *
 from utils import *
-from time import time 
+from time import time
 from client import User
 from pyrogram import Client, filters 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton 
