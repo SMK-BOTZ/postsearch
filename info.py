@@ -1,7 +1,7 @@
 API_ID       = 22207976
 API_HASH     = "5c0ad7c48a86afac87630ba28b42560d"
 BOT_TOKEN    = "6863575303:AAHxr_BoTljbkzi4xwVJJKQkGuMudHc1ijM"
-SESSION      = "BQAncJb047wcFSUie2bbX4nDIUqVdyowoioe4e0Jd71nXMS4Sxzr2GCQr6fjn_Eo_SXgvQAgevOUgVmlqr5pQnreYGgoYuEFFlEj5jx9rFoVwgpIeN-fQbTmDuRf8od5Qkw0qMe6OxmDsdO4906f7CoRnMSweZxjQhiOr7PClarkoGJfzahPgIFnmyNrUPh4wzy0i_EjS2-SJhy3ZZbPqxC4sjD0EJ38lTYro4PYe6xMnplopkcPi58eIinrRKVsHlw3s2z0WoJJkKn23QopP4yg96KfNQyHROy7teEduPpBQHwHPJXHFgx5xaQYrS8iVBLAXcozvPlqWD_rInseH64fAAAAAVUN5igA"
+SESSION      = "BQG_NJ0AoXQqtfXg3fbXYC35iyO20P2s8Hbu6kcUXERH4v_y2WLk2h5vLbIEuu_WteDrIOUifjlmvK9o2H4JcWsh7qfrPNj5dp8WeuIHPGpg9-w8bU_raqV1FNV5qkLYMqbETmT_lx0zWTVwACaqyvD2dpul0rjmMTZiBWg8r5Gc3vPClLz5bYo6Vnpz_0rd93ybq38A2hWwCjc3spPdeeu2z9Vknnk8FMvckIXClF7bkUjD9MG-aW0YrhVbsvoJPPpOfa5XEBJSLIC3ABAtR0FRKKBECjSaKYer9qJxzndTkLp6HWge7CU1LyAERyMWw6v73MgzjtpqTDxpW7jE4_PXfKPNtgAAAAFVDeYoAA"
 DATABASE_URI = "mongodb+srv://Devensh:Devensh@cluster0.pe664.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 LOG_CHANNEL  = -1001942398843
 ADMIN        = 6872968794
