@@ -10,7 +10,7 @@ I Will filter your channel posts automatically and send it in your group chat wh
 
 - Add My Assistant in your group & channel with all permissions [Remain anonymous permission Required in Group] . Assistant Id - @Miss_Naruto
 
-- Send /verify in group & wait for It To Accept Or Directly Contact To Owner After Request @DK_x_BOT.
+- Send /verify in group & wait for It To Accept Or Directly Contact To Owner After Request @mai_hu_kira.
 
 - After verification send /connect YourChannelID
 
@@ -23,12 +23,12 @@ this will help you to remove a indexed channel from your group.
 
 Get connected channels list with - /connections</b>"""
 
-    ABOUT = """<b>Powered By @DK_x_BOT
+    ABOUT = """<b>Powered By <a href='https://t.me/+06eHU0UzrcM1Nzg1'>𝑨𝒍𝒚𝒂 𝑩𝒐𝒕</a>
 
 ✯ Mʏ Nᴀᴍᴇ:  {}
 ✯ Cʀᴇᴀᴛᴏʀ: <a href='tg://user?id=6872968794'>🔥︵L͙I͙G͙H͙T͙ ✿ Y͙A͙G͙A͙M͙I͙︵🔥</a>
-✯ SUPPORT: <a href='https://t.me/DKxBOT_GROUP'>@DKxBOT_GROUO</a>
-✯ CHANNEL: <a href='https://t.me/DK_x_BOT'>@DK_x_BOT</a>
+✯ SUPPORT: <a href='https://t.me/+06eHU0UzrcM1Nzg1'>𝑨𝒍𝒚𝒂 𝑩𝒐𝒕</a>
+✯ CHANNEL: <a href='https://t.me/dkanime_group'>𝑺𝒖𝒑𝒑𝒐𝒓𝒕</a>
 ✯ DONATE: : <a href='tg://user?id=6872968794'>BUY A COFEE</a></b>"""
 
     STATS = """My Status 💫
