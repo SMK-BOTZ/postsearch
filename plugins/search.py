@@ -23,9 +23,8 @@ async def search(bot, message):
                # Forward the message instead of sending a link
                await msg.forward(message.chat.id)
                break  # Stop after forwarding the first matching message
-    except Exception as e:
-       await message.reply_text(f"❌ Error: {e}")
-
+    except :
+       pass
 
 @Client.on_callback_query(filters.regex(r"^recheck"))
 async def recheck(bot, update):
@@ -48,9 +47,8 @@ async def recheck(bot, update):
                # Forward the message instead of sending a link
                await msg.forward(update.message.chat.id)
                break  # Stop after forwarding the first matching message
-    except Exception as e:
-       await update.message.edit(f"❌ Error: {e}")
-
+    except :
+        pass
 
 @Client.on_callback_query(filters.regex(r"^request"))
 async def request(bot, update):
