@@ -17,27 +17,15 @@ async def search(bot, message):
     if message.text.startswith("/"):
        return    
     query   = message.text 
-7 months ago
-
-Update search.py
     head    = "<u>Here is the result 👇</u>"
-2 years ago
-
-Add files via upload
     try:
        for channel in channels:
            async for msg in User.search_messages(chat_id=channel, query=query):
-7 months ago
-
-Update search.py
                # Forward the message instead of sending a link
                await msg.forward(message.chat.id)
                break  # Stop after forwarding the first matching message
     except Exception as e:
        await message.reply_text(f"❌ Error: {e}")
-2 years ago
-
-Add files via upload
 
 
 @Client.on_callback_query(filters.regex(r"^recheck"))
@@ -54,33 +42,15 @@ async def recheck(bot, update):
     id      = update.data.split("_")[-1]
     query   = await search_imdb(id)
     channels = (await get_group(update.message.chat.id))["channels"]
-7 months ago
-
-Update search.py
     head    = "<u>I Have Searched With Wrong Spelling But Take care next time 👇 </u>"
-2 years ago
-
-Add files via upload
     try:
        for channel in channels:
            async for msg in User.search_messages(chat_id=channel, query=query):
-7 months ago
-
-Update search.py
                # Forward the message instead of sending a link
                await msg.forward(update.message.chat.id)
                break  # Stop after forwarding the first matching message
-2 years ago
-
-Add files via upload
     except Exception as e:
-7 months ago
-
-Update search.py
        await update.message.edit(f"❌ Error: {e}")
-2 years ago
-
-Add files via upload
 
 
 @Client.on_callback_query(filters.regex(r"^request"))
