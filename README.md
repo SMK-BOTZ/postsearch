@@ -15,4 +15,4 @@
 
 ## Deploy 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=[https://github.com/Devensh22345/Postsearch2])
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=[https://github.com/SMK-BOTZ/postsearch])
