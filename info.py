@@ -1,7 +1,1 @@
-API_ID       = "22207976"
-API_HASH     = "5c0ad7c48a86afac87630ba28b42560d"
-BOT_TOKEN    = "6863575303:AAHxr_BoTljbkzi4xwVJJKQkGuMudHc1ijM"
-SESSION      = "BQG_NJ0AVWoDXC9zWMi9azg5g-m5l1SUmX4ue72U-ECzKb-DCcLFFtn3orAjYM9q5vpam_lfcxT5KyBtUzC5c1-q-1vwDlaZwo-6MBJoOqSAMEMfJ13VYZsy6Vn7MApvYIO4_8iwWn8uD8AvYbeeyCbaU4fZ0o7UMSjYs9lykMAE7ZmPMvBHo2FZBxgxETtdx4BfQgt8Scf6vEG9byfpwlfS7ccvdJ_jeTVo6VPKswjtWrGwHlY8-OctoXxEXPW4sla5-m33Ib2g6p3FDwM4VXgPUM8gAvrnBoquW6E-iuXfofx_EX8lbwL5BoNyo7rC-H8EvACDBwnj3fZFvcXYTFZYm097zgAAAAFVDeYoAA"
-DATABASE_URI = "mongodb+srv://Devensh:Devensh@cluster0.pe664.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-LOG_CHANNEL  = "-1001942398843"
-ADMIN        = "6872968794"
+
